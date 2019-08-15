@@ -23,7 +23,7 @@ public class Projecttemplate2Impl  {
     @Produces({ "application/json" })
     public String helloworld(@QueryParam("name") String name) {
 
-    	return projecttemplate2Delegate.helloworld(name);
+    	return projecttemplate2Delegate.helloworld("projecttemplate2:"+name);
     }
 }
 
